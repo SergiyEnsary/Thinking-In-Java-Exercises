@@ -6,8 +6,6 @@ public class Exercise007 {
 
 	  Random randomNum = new Random();
 	  private int result;
-	  private int heads = 0;
-	  private int tails = 1;
 	  Coin coinFlip;
 
 	  public void flip(){
