@@ -11,8 +11,37 @@ package chapter3practices;
  */
 public class Chapter3Exercise10 {
 	public static void main(String args[]){
+		int w, x, y , z; 
 		for(int i=1000; i<10000; i++) {
-			
+			w = i/1000;
+			x = (i%1000)/100;
+			y = ((i%100)%100)/10;
+			z = ((i%1000)%100)%10;
+			if(areFangs(w,x,y,z,i)) {
+				System.out.println(i+" is a vampire number");
+			}
 		}
+	}
+	//all fang compositions
+	public static boolean areFangs(int w, int x, int y, int z, int num) {
+		if(calc(w,x,y,z)==num) {return true;}
+		if(calc(x,w,y,z)==num) {return true;}
+		if(calc(w,x,z,y)==num) {return true;}
+		if(calc(x,w,z,y)==num) {return true;}
+		
+		if(calc(w,y,x,z)==num) {return true;}
+		if(calc(y,w,x,z)==num) {return true;}
+		if(calc(w,y,z,x)==num) {return true;}
+		if(calc(y,w,z,x)==num) {return true;}
+		
+		if(calc(w,z,x,y)==num) {return true;}
+		if(calc(z,w,x,y)==num) {return true;}
+		if(calc(w,z,y,x)==num) {return true;}
+		if(calc(z,w,y,x)==num) {return true;}
+		return false;
+	}
+	//calculates the fangs
+	public static int calc(int w, int x, int y, int z) {
+		return ((w*10)+x)*((y*10)+z);
 	}
 }
