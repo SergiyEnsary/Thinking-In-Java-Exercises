@@ -10,7 +10,7 @@ package chapter3practices;
  *	Write a program that finds all the 4-digit vampire numbers. (Suggested by Dan Forhan.)
  */
 public class Chapter3Exercise10 {
-	public static void main(String args[]){
+	public static void main(String[] args){
 		int w, x, y , z; 
 		for(int i=1000; i<10000; i++) {
 			w = i/1000;

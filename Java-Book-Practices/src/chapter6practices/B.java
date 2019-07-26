@@ -1,0 +1,12 @@
+package chapter6practices;
+
+public class B extends A {
+	public B(String string) {
+		super(1);
+		System.out.println("B");
+		System.out.println(this);
+	}
+	public String toString() {
+		return "B";
+	}
+}
