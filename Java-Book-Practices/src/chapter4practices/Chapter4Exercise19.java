@@ -6,15 +6,16 @@ package chapter4practices;
 public class Chapter4Exercise19 {
 	public static void main(String [] args) {
 		class VarArgs {
-		    public void printVarargs(String[] strings) {
-		        for (int i =0; i<strings.length;i++) {
-		            System.out.println(strings[i]);
+		    public void printVarargs(Object... args) {
+		        for(Object obj : args) {
+		        	System.out.print(obj + " ");
+		        System.out.println();
 		        }
 		    }
 		}
 		
 		VarArgs varArgs = new VarArgs();
-		varArgs.printVarargs(new String[]{"One","Two","Three"});
+		varArgs.printVarargs("One","Two","Three");
 		
 		String[] strings1 = new String[]{"Four","Five","Six"};
 		varArgs.printVarargs(strings1);

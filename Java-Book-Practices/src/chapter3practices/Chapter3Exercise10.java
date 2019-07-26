@@ -41,7 +41,7 @@ public class Chapter3Exercise10 {
 		return false;
 	}
 	//calculates the fangs
-	public static int calc(int w, int x, int y, int z) {
-		return ((w*10)+x)*((y*10)+z);
+	public static int calc(int num1, int num2, int num3, int num4) {
+		return ((num1*10)+num2)*((num3*10)+num4);
 	}
 }

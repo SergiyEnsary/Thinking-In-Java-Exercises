@@ -4,9 +4,9 @@ package chapter4practices;
  *      elements in the resulting args array. Test it with various numbers of command-line arguments.
  */
 public class Chapter4Exercise20 {
-public static void main(String [] args) {
-	for (String string : args) {
-        System.out.println(string);
-    }
-}
+	public static void main(String [] args) {
+		for (Object object : args) {
+			System.out.println(object);
+		}
+	}
 }
