@@ -7,4 +7,5 @@ public class Connection {
 	public static Connection get() {
 		return new Connection();
 	}
+	
 }
