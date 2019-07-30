@@ -4,7 +4,6 @@ public class Detergent {
 
     Cleanser cleanser = new Cleanser();
 
-    @Override
     public String toString() {return cleanser.toString();}
 
     public void scrub() {
