@@ -4,9 +4,6 @@ package chapter8practices;
 public class Chapter8Exercise07 {
 	private static RandomRodentGenerator1 gen = new RandomRodentGenerator1();
 	public static void main(String[] args) {
-		// Error: cannot instantiate (abstract) interface:
-		// Rodent x = new Rodent();
-		// But OK to create array of implementing objects:
 		Rodent07[] rodents = new Rodent07[10];
 		for(Rodent07 r : rodents) {
 			r = (Rodent07) gen.next();
