@@ -8,7 +8,6 @@ import java.util.*;
 */
 
 public class Ex13 {
-	
 	private LinkedList<Event> eventList = new LinkedList<Event>();
 	public void addEvent(Event c) { eventList.add(c); }		
 	public void run() {		
