@@ -5,21 +5,25 @@ package chapter11practices;
  * write code that properly guards against this failure.
  */
 
-public class Ex22 {
+public class FailingConstructor{
 	Integer[] ia = new Integer[2];
-	String s;
-	Ex22(String s) throws Exception {
+	String str;
+	FailingConstructor(String string){
 		ia[0] = 0;
 		ia[1] = 1;
 		ia[2] = 2;
-		this.s = s; 
+		this.str = string; 
 	}
 	public static void main(String[] args) {
 		try {
-			Ex22 ex22 = new Ex22("hi");
+			FailingConstructor ex22 = new FailingConstructor("hi");
 		} catch(Exception e) {
-			System.err.println("Caught Exception in main()");
-			e.printStackTrace(System.err);
+			System.out.println("Caught Exception in main(): " + e + "\n");
 		} finally {}
 	}	
 }
+/*Output:
+ 	
+ 	Caught Exception in main(): java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
+
+ */
