@@ -36,3 +36,19 @@ public class Ex5 {
 		formatter.format("%-7s%-7S%-7b%-7B%-7h%-7H%%\n", z,z,z,z,z,z);
 	}
 }
+/*Output:
+
+char u = 'a'
+a A a A true TRUE 61 61 %
+int v = 121
+121 121 121 y   Y   true TRUE 79  79  79  79  %
+BigInteger w = 50000000000000
+50000000000000 50000000000000 true TRUE 2d79883d2000   2D79883D2000   8842a1a78842A1A7%
+double x = 179.543
+179.543 179.543 true TRUE 179.543000     1.795430e+02   1.795430E+02   1ef462c     1EF462C     %
+Conversion y = new Conversion()
+chapter12practices.Conversion@28a418fcCHAPTER12PRACTICES.CONVERSION@28A418FCtrue TRUE 28a418fc  28A418FC  %
+boolean z = false
+false  FALSE  false  FALSE  4d5    4D5    %
+ 
+ */
