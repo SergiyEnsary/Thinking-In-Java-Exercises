@@ -1,6 +1,7 @@
 package chapter13practices;
 
-//Add Gerbil to the typeinfo.pets library and modify all the examples//in this chapter to adapt to this new class.
+//Add Gerbil to the typeinfo.pets library and modify all the examples
+//in this chapter to adapt to this new class.
 
 
 public class Ex11 {
