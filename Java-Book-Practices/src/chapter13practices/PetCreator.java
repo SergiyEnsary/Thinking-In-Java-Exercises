@@ -1,20 +1,16 @@
 package chapter13practices;
 
 import java.util.*;
-public abstract class PetCreator {
-	private Random rand = new Random(47);
+ 
+ public abstract class PetCreator {
+	private Random rand = new Random();
 	// The List of the different types of Pet to create:
 	public abstract List<Class<? extends Pet>> types();
-	public Pet randomPet() { // Create one random Pet
-		int n = rand.nextInt(types().size());
-		try {
-			return types().get(n).newInstance();
-		} catch(InstantiationException e) {
-			throw new RuntimeException(e);
-		} catch(IllegalAccessException e) {
-			throw new RuntimeException(e);
-		}
+
+	public Pet randomPet() {
+		return PetFactory.createRandom();
 	}
+
 	public Pet[] createArray(int size) {
 		Pet[] result = new Pet[size];
 		for(int i = 0; i < size; i++)
@@ -26,4 +22,4 @@ public abstract class PetCreator {
 		Collections.addAll(result, createArray(size));
 		return result;
 	}
-}
+ } 

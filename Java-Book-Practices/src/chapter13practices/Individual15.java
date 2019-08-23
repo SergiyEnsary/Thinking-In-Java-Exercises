@@ -1,6 +1,6 @@
 package chapter13practices;
 
-public class Individual15 extends PetFactory15 implements Comparable<Individual15> {
+public class Individual15 extends PetFactory implements Comparable<Individual15> {
 	private static long counter = 0;
 	private final long id = counter++;
 	private String name;

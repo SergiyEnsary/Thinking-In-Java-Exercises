@@ -1,14 +1,12 @@
 package chapter13practices;
 
+import java.util.*;
 
- import java.util.*;
-
- class PetFactory {
+public class PetFactory {
 	public String toString() {
 		return getClass().getSimpleName();
 	}
-	static List<Factory<? extends Pet>> petFactories = 
-		new ArrayList<Factory<? extends Pet>>();
+	static List<Factory<? extends Pet>> petFactories = new ArrayList<Factory<? extends Pet>>();
 	static {
 		petFactories.add(new Pet.Factory());
 		petFactories.add(new Cat.Factory());

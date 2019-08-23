@@ -1,3 +1,7 @@
 package chapter13practices;
 
-public class Americano extends Coffee{}
+class Americano extends Coffee {
+	public static class Factory implements chapter13practices.Factory<Americano> {
+		public Americano create() { return new Americano(); }
+	}
+}

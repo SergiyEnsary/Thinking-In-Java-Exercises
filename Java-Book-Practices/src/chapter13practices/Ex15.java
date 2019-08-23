@@ -9,6 +9,6 @@ import java.util.*;
 public class Ex15 {
 	public static void main(String[] args) {
 		for(int i = 0; i < 10; i++)
-			System.out.println(PetFactory15.createRandom());
+			System.out.println(PetFactory.createRandom());
 	}
 }
