@@ -1,6 +1,6 @@
 package chapter14practices;
 
-// Show that covariancd doesn't work with Lists using Numbers and 
+// Show that covariance doesn't work with Lists using Numbers and 
 // Integers, then introduce wildcards.
 
 import java.util.*;
