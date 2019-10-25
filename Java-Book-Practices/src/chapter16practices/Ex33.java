@@ -167,7 +167,7 @@ public class Ex33 {
 			int test(FastTraversalLinkedList<Integer> list, TestParam tp) {
 				int loops = tp.loops;
 				for(int i = 0; i < loops; i++)
-					list.add(5, 47); // Minimize random-access cost
+					list.add(5, 47);
 				return loops;
 			}
 		});		
@@ -179,12 +179,11 @@ public class Ex33 {
 					list.clear();
 					list.addAll(new CountingIntegerList(size));
 					while(list.size() > 5)
-						list.remove(5); // Minimize random-access cost
+						list.remove(5);
 				} 
 				return loops * size;		
 			}
 		});		
-		// Tests for queue behavior:
 		qTests.add(new Test<FastTraversalLinkedList<Integer>>("addFirst") {
 			int test(FastTraversalLinkedList<Integer> list, TestParam tp) {
 				int loops = tp.loops;
